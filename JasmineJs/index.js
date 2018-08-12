@@ -1,11 +1,18 @@
 const Express = require("express")
 
-var lib = require("lib");
+var lib = require("./lib");
 
 var app = Express();
 
 
-var runProgram = function () {
+var runProgram = function (length) {
 
-	// body...
+	for (var i = 0; i < length; i++) {
+		
+		console.log( lib.runProgram( i ) )
+
+	}
+	
 }
+
+runProgram(100)
